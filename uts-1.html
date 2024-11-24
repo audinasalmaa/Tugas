@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Studio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="uts.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="navbarjudul">
+      <a href="#"><h2>Serenity Studio</h2></a>
+    </div>
+    
+    <div class="navbartoggle">
+      <a href="uts.html">Home</a>
+      <a href="uts.html">Blog</a>
+      <a href="uts-1.html">About</a>
+    </div>
+  </nav>
+
+  <br>
+    <main class="content">
+<h2>About Us</h2>
+<p class="fungsi">Serenity Studio is a platform inspired by the beauty and uniqueness of individual styles. We are dedicated to providing high-quality fashion tips and guidance, from outfit inspirations to style hacks, with the goal of enhancing confidence and elegance in every individual.
+<br><br>
+Serenity Studio carries the tagline “Style, Confidence, Happiness :)” that we incorporate into all our campaigns and platforms. This tagline reflects our mission to offer comprehensive content, from dressing guides to styling tips, ensuring our audience enjoys a delightful and fulfilling experience as they explore and apply our advice. From the visuals to the thoughtful insights we provide, everything is curated to inspire confidence and joy in self-expression. We also promote inclusivity and sustainability in fashion.
+<br><br>
+Serenity Studio continues to innovate and adapt its style content based on audience feedback and evolving trends in the global fashion scene.</p>
+</main>
+
+
+<section class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="send-button">Send</button>
+    </form>
+  </section>  
+
+  <script type="text/javascript">
+    var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function(){
+      var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+      if (scrollTop > lastScrollTop){
+        navbar.style.top='-80px';
+      } else {
+        navbar.style.top="0";
+      }
+        lastScrollTop = scrollTop;
+    })
+  </script>
+
+</body>
+</html>
