@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Studio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="uts.css">
+    <script src="https://kit.fontawesome.com/ce31df06cb.js" crossorigin="anonymous"></script>
+<br>
+
+</head>
+<body>
+   
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="navbarjudul">
+    <a href="uts.html">Serenity Studio</a>
+  </div>
+          
+  <div class="navbartoggle">
+    <a href="uts.html">Home</a>
+    <a href="uts-1.html">About</a>
+    <a href="uts-2.html">Wardrobe Tips</a>
+    <a href="#Join">Join</a> 
+    <a href="#Contact">Contact</a> 
+  </div>
+</nav>
+    
+<br>
+
+<!-- Registration Section -->
+<section id="Join">
+  <h2>Join for Serenity Studio</h2>
+  <p>Join Serenity Studio to stay updated on timeless, sustainable, and stylish fashion tips. Fill out the form below to become a member of our community.</p>
+  <div class="container">
+    <form action="submit_registration.php" method="POST" class="registration-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number (optional)">
+      </div>
+
+      <div class="form-group">
+        <label for="preferences">Fashion Preferences</label>
+        <textarea id="preferences" name="preferences" placeholder="Tell us your fashion preferences"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Join</button> 
+    </form>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="Contact">
+  <h2>Contact</h2>
+  <p>We’d love to hear from you! If you have any questions, suggestions, or just want to chat about fashion, feel free to reach out to us using the form below.</p>
+
+  <!-- Contact Form -->
+  <div class="container">
+    <form action="submit_contact.php" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="contact-name">Your Name</label>
+        <input type="text" id="contact-name" name="contact-name" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Your Email</label>
+        <input type="email" id="contact-email" name="contact-email" required placeholder="Enter your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="contact-message">Your Message</label>
+        <textarea id="contact-message" name="contact-message" required placeholder="Enter your message"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <p>Email: <a href="mailto:info@serenitystudio.com">info@serenitystudio.com</a></p>
+      <p>Follow us on social media:</p>
+      <a href="https://www.instagram.com/sashfir?igsh=MWVwaDM5cWp1MGppdg==" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.tiktok.com/@sashfir?_t=8riGEKxoXMG&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://youtube.com/@sashfir?si=1g5CMaFPW0BR-DsG" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2024 Style Insights | Designed by Audina Salma.<br>
+  Visit the <a href="https://fashiontoday.co.id/?srsltid=AfmBOoqaASinMfjSGoMJPFTDf7Dpwi4NiIgHk-z7wu6MhLtG1fGKeW2V" target="_blank">Serenity Studio</a>
+  </footer>
+  
+  <!-- Javascript -->
+  <script type="text/javascript">
+    var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function(){
+      var scrollTop = window.pageYOffset || document
+        .documentElement.scrollTop;
+      if (scrollTop > lastScrollTop){
+        navbar.style.top='-80px';
+      } else {
+        navbar.style.top="0";
+      }
+        lastScrollTop = scrollTop;
+    })
+  </script>
+  
+  <button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // Memunculkan button jika di scroll sesuai height
+  window.onscroll = function () {
+    if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+  
+  // Akan scroll ke atas
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+  </script>
+  
+  </body>
+  </html>

@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f4efec;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: #a4a3a3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbarjudul a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbartoggle a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto 0;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.main-article {
+    flex: 3;
+    padding-right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.main-article h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.main-article p {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    text-align: justify;
+    color: #555;
+}
+
+.main-article ol {
+    margin-left: 20px;
+}
+
+.main-article ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.sidebar {
+    flex: 1;
+    padding-left: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sidebar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-posts ul {
+    list-style: none;
+}
+
+.sidebar .recent-posts li {
+    margin-bottom: 10px;
+}
+
+.sidebar .recent-posts a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #a4a3a3;
+    color: #fff;
+    padding: 1.2rem;
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+   text-decoration: none;
+   color: #fff;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Untuk sembunyikan tombol */
+    color: #0a1829;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: transparent;
+    color: white;
+  }

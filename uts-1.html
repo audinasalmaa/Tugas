@@ -6,64 +6,114 @@
     <title>Serenity Studio</title>
     <link rel="icon" type="image/x-icon" href="images/logo.jpg">
     <link rel="stylesheet" href="uts.css">
+<br>
 </head>
+
 <body>
-  <nav id="navbar">
-    <div class="navbarjudul">
-      <a href="#"><h2>Serenity Studio</h2></a>
-    </div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="navbarjudul">
+    <a href="uts.html">Serenity Studio</a>
+  </div>
+          
+  <div class="navbartoggle">
+    <a href="uts.html">Home</a>
+    <a href="uts-1.html">About</a>
+    <a href="uts-2.html">Wardrobe Tips</a>
+    <a href="uts-3.html">Join</a>
+    <a href="uts-3.html">Contact</a>
+  </div>
+</nav>
     
-    <div class="navbartoggle">
-      <a href="uts.html">Home</a>
-      <a href="uts.html">Blog</a>
-      <a href="uts-1.html">About</a>
-    </div>
-  </nav>
+<br><br><br>
 
-  <br>
-    <main class="content">
-<h2>About Us</h2>
-<p class="fungsi">Serenity Studio is a platform inspired by the beauty and uniqueness of individual styles. We are dedicated to providing high-quality fashion tips and guidance, from outfit inspirations to style hacks, with the goal of enhancing confidence and elegance in every individual.
-<br><br>
-Serenity Studio carries the tagline “Style, Confidence, Happiness :)” that we incorporate into all our campaigns and platforms. This tagline reflects our mission to offer comprehensive content, from dressing guides to styling tips, ensuring our audience enjoys a delightful and fulfilling experience as they explore and apply our advice. From the visuals to the thoughtful insights we provide, everything is curated to inspire confidence and joy in self-expression. We also promote inclusivity and sustainability in fashion.
-<br><br>
-Serenity Studio continues to innovate and adapt its style content based on audience feedback and evolving trends in the global fashion scene.</p>
-</main>
+<h1>History of serenity Studio</h1>
+  <p class="paragraph">
+    Founded with a passion for sustainable fashion and the belief that style should not be compromised by trends or seasons,
+    Serenity Studio began as a simple idea to offer functional and eco-friendly fashion solutions. What started as a small 
+    concept has since evolved into a community of like-minded individuals who value quality over quantity and embrace simplicity in style.
+    Over time, Serenity Studio has become a trusted name for those seeking a wardrobe that blends timeless design with sustainable practices.
+    </p>
+       
+<div class="container">
+  <div class="box">
+  <h2>Vision</h2>
+    <p>
+    Redefining fashion by combining simplicity, timeless elegance, and environmental consciousness. Serenity Studio aims to empower individuals to create stylish and sustainable wardrobes, making conscious fashion choices more accessible while inspiring others to live with purpose and style.
+    </p>
+</div>
 
+<div class="box">
+  <h2>Mission</h2>
+    <ol>
+    <li>To promote sustainable fashion by focusing on durability, timeless designs, and minimal environmental impact.</li>
+    <li>To empower individuals to create wardrobes that reflect their personal style while supporting a more sustainable approach to fashion.</li>
+    <li>To build a community of like-minded individuals who share a passion for living purposefully and making mindful fashion choices.</li>
+    </ol>
+  </div>
+</div>
 
-<section class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="#" method="POST">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="send-button">Send</button>
-    </form>
-  </section>  
+<br>
+<h1>Goals of Serenity Studio</h1>
+<p class="paragraph">
+  At Serenity Studio, our goal is to promote sustainable fashion by encouraging consumers to make mindful choices, using eco-friendly materials, and emphasizing the importance of quality over quantity in fashion. 
+  We aim to help individuals build versatile, functional wardrobes that suit their lifestyles, boosting confidence through timeless fashion choices. Additionally, we support a circular fashion economy by reducing fashion waste,
+  offering timeless pieces that encourage long-term use, and decreasing reliance on fast fashion. 
+  <br><br>
+  Serenity Studio also provides a platform for individuals to express their unique style through a collection that prioritizes simplicity, elegance, and sustainability. More than just a brand, Serenity Studio is a movement towards
+  a more conscious and stylish way of living. Through thoughtful fashion choices, we are committed to making the world a better place, one wardrobe at a time.
+</p>
+<br>
 
-  <script type="text/javascript">
-    var lastScrollTop = 0;
-      navbar = document.getElementById("navbar");
-    window.addEventListener("scroll", function(){
-      var scrollTop = window.pageYOffset || document
-        .documentElement.scrollTop;
-      if (scrollTop > lastScrollTop){
-        navbar.style.top='-80px';
-      } else {
-        navbar.style.top="0";
-      }
-        lastScrollTop = scrollTop;
-    })
-  </script>
+<!-- Footer -->
+<footer>
+  © 2024 Style Insights | Designed by Audina Salma.<br>
+  Visit the <a href="https://fashiontoday.co.id/?srsltid=AfmBOoqaASinMfjSGoMJPFTDf7Dpwi4NiIgHk-z7wu6MhLtG1fGKeW2V" target="_blank">Serenity Studio</a>
+  </footer>
+  
+<!-- Javascript -->
+<script type="text/javascript">
+  var lastScrollTop = 0;
+    navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || document
+      .documentElement.scrollTop;
+    if (scrollTop > lastScrollTop){
+      navbar.style.top='-80px';
+    } else {
+      navbar.style.top="0";
+    }
+      lastScrollTop = scrollTop;
+  })
+</script>
+
+<button id="scrollToTopBtn" class="scroll-to-top" style="font-size: 30px;">&#11121</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Memunculkan button jika di scroll sesuai height
+window.onscroll = function () {
+  if (document.body.scrollTop > 185 || document.documentElement.scrollTop > 185) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Akan scroll ke atas
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
 
 </body>
 </html>
+
+
+      
+        
+        
